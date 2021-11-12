@@ -1,0 +1,22 @@
+// Mixins for FONT
+// fz -- font-size
+// lh -- line-height
+// ls -- letter-spacing
+
+@mixin font($fz, $lh, $ls) {
+	font-size: $fz;
+	line-height: $lh / $fz;
+	letter-spacing: $ls;
+}
+
+
+
+// Mixins for  CARDS
+// nc -- number-cards
+// gap --  interval between cards
+
+@mixin flex-card($nc, $gap) {
+	flex-basis: calc(100% / #{$nc} - $gap);
+	margin-left: $gap;
+	margin-top: $gap;
+}
