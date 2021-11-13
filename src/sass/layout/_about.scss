@@ -1,3 +1,72 @@
-.about{
-  
+.about {
+  padding-top: 125px;
+}
+
+.about__label,
+.about__title {
+  font-family: 'Titan One', cursive;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__label {
+  margin-bottom: 15px;
+
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+}
+
+.about__title {
+  color: var(--accent-color);
+  @include font(34px, 39px, 0.04em);
+}
+
+.about__image {
+  margin-bottom: 46px;
+}
+
+.about__desc,
+.about__text {
+  padding: 0 30px;
+
+  font-weight: 500;
+  line-height: calc(19 / 12);
+}
+
+.about__desc {
+  margin-bottom: 32px;
+}
+
+.about__text {
+  margin-bottom: 25px;
+  color: var(--third-text-color);
+}
+
+.about__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  min-width: 176px;
+  height: 44px;
+  border-radius: 22px;
+
+  background-color: var(--secondary-bg-color);
+
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    margin-top: 1px;
+    margin-left: 13px;
+    background-image: url('../images/icons/about-btn-icon.svg');
+  }
 }
