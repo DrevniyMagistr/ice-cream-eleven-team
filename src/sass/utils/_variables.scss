@@ -1,3 +1,10 @@
+$to-mobile: 320px;
+$mobile: 480px;
+$to-tablet: 767px;
+$tablet: 768px;
+$to-desktop: 1279px;
+$desktop: 1280px;
+
 :root {
   --accent-color: #d41443;
 
@@ -41,3 +48,5 @@
   --animation-cube: cubic-bezier(0.4, 0, 0.2, 1);
 	--animation-timer: 250ms;
 }
+
+
