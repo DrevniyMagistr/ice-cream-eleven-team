@@ -9,4 +9,4 @@ function t(){$(".nav__link").click(function(){return $(".active").removeClass("a
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/modal.js"),require("./js/mobile-menu.js"),require("./js/anchor.js");
 },{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/mobile-menu.js":"RSqK","./js/anchor.js":"v66i"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-eleven-team/src.a32d4b37.js.map
+//# sourceMappingURL=/ice-cream-eleven-team/src.0c3494ee.js.map
