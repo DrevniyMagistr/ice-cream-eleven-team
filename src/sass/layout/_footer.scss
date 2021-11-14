@@ -9,6 +9,12 @@
       padding-bottom: 91px;
       padding-top: 20px;
     }
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 97px;
+      padding-top: 20px;
+    }
   }
   &__conclusion {
     width: 232px;
@@ -18,6 +24,10 @@
     }
     @media screen and (min-width: 768px) {
       width: 340px;
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 474px;
       margin-bottom: 0px;
     }
   }
@@ -43,6 +53,12 @@
       &--size {
         font-size: 48px;
       }
+      @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      margin-bottom: 15px;
+      &--size {
+        font-size: 58px;
+      }
     }
   }
   &__network {
@@ -53,6 +69,8 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 46px;
+    @media screen and (min-width: 1280px) {
+       margin-bottom: 50px;
   }
   &__item {
     &:first-child {
@@ -103,6 +121,9 @@
     padding: 25px 0px;
     @media screen and (min-width: 768) {
       padding: 29px 0px 18px 0px;
+    }
+    @media screen and (min-width: 1200){
+      padding: 9px 0px;
     }
   }
   &__paragraf {
