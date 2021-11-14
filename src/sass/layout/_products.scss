@@ -1,8 +1,8 @@
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 100%;
-}
+// .container {
+//   margin: 0 auto;
+//   padding: 0 20px;
+//   width: 100%;
+// }
 
 .products {
   padding-top: 121px;
@@ -34,6 +34,7 @@
 }
 
 .products__item {
+  position: relative;
   height: 485px;
   border-radius: 24px;
   padding-top: 161px;
@@ -46,6 +47,23 @@
 
 .products__item--first {
   background-color: var(--primary-card-bg);
+  &::before {
+    position: absolute;
+
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 52%);
+
+    content: '';
+    display: inline-block;
+
+    height: 252px;
+    max-width: 249px;
+    width: 100%;
+    background-image: url(../images/mobile/products/ice-cream-mob-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .products__item--second {
@@ -70,6 +88,17 @@
     margin-bottom: 66px;
   }
 }
+
+// .products__item .products__name::before {
+//   content: '';
+//   display: inline-block;
+//   margin-bottom: 22px;
+//   height: 252px;
+//   width: 249px;
+//   background-image: url(../images/mobile/products/ice-cream-mob-min.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 
 .products__text {
   margin-left: auto;
