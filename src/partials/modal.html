@@ -1,0 +1,64 @@
+<div class="backdrop is-hidde" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn">
+      <svg class="modal__icon">
+        <use href="./images/icons/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Please, place your order</p>
+    <form action="#" class="form-field">
+      <div class="modal__field">
+        <label for="user-name" class="modal__label">Name</label>
+        <span class="modal__input-wrap">
+          <input type="text" name="user-name" id="user-name" class="modal__input" />
+          <svg class="modal__input-icon">
+            <use href="./images/icons/sprite.svg#icon-user"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="modal__field">
+        <label for="user-tel" class="modal__label">Telephone</label>
+        <span class="modal__input-wrap">
+          <input type="tel" name="user-tel" id="user-tel" class="modal__input"/>
+          <svg class="modal__input-icon">
+            <use href="./images/icons/sprite.svg#icon-phone"></use>
+          </svg>
+        </span>
+      </div>
+       <div class="modal__field">
+        <label for="user-address" class="modal__label">Address</label>
+        <span class="modal__input-wrap">
+          <input type="text" name="user-address" id="user-address" class="modal__input"/>
+          <svg class="modal__input-icon">
+            <use href="./images/icons/sprite.svg#icon-location"></use>
+          </svg>
+        </span>
+      </div>
+           <input
+            type="checkbox"
+            id="modal-checkbox"
+            class="modal__checkbox"
+          />
+            <input
+            type="checkbox"
+            id="modal-checkbox"
+            class="modal__checkbox"
+          />
+            <input
+            type="checkbox"
+            id="modal-checkbox"
+            class="modal__checkbox"
+          />
+      <div class="modal__text-field">
+            <label for="user-text" class="modal__label">Your comment</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal__text-input"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
