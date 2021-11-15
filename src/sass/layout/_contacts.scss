@@ -1,36 +1,51 @@
 .contacts {
   padding-top: 86px;
 
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     var(--secondary-bg-color),
     var(--secondary-bg-color) 11%,
-    var(--primary-bg-color) 11%,
-    var(--primary-bg-color) 100%
+    var(--primary-bg-color) 11%
   );
 
   @media screen and (min-width: 768px) {
     padding-top: 119px;
 
-    background: linear-gradient(
+    background-image: linear-gradient(
       to bottom,
       var(--secondary-bg-color),
       var(--secondary-bg-color) 26%,
-      var(--primary-bg-color) 26%,
-      var(--primary-bg-color) 100%
+      var(--primary-bg-color) 26%
     );
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 132px;
 
-    background: linear-gradient(
-      to bottom,
-      var(--secondary-bg-color),
-      var(--secondary-bg-color) 29%,
-      var(--primary-bg-color) 29%,
-      var(--primary-bg-color) 100%
-    );
+    background-image: url(../images/desktop/contacts/contacts-bg-img-desk.png),
+      linear-gradient(
+        to bottom,
+        var(--secondary-bg-color),
+        var(--secondary-bg-color) 29%,
+        var(--primary-bg-color) 29%
+      );
+
+    background-repeat: no-repeat;
+    background-position: top 234px left 50%, top;
+    background-size: 1280px 382px, 100%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/contacts/contacts-bg-img-desk-2x.png),
+        linear-gradient(
+          to bottom,
+          var(--secondary-bg-color),
+          var(--secondary-bg-color) 29%,
+          var(--primary-bg-color) 29%
+        );
+      background-repeat: no-repeat;
+      background-position: top 234px left 50%, top;
+      background-size: 1280px 382px, 100%;
+    }
   }
 }
 
@@ -102,15 +117,16 @@
   @media screen and(max-width: 767px) {
     &::after {
       width: 6px;
-      background-image: url('../images/icons/forward-arrow-light-small.svg');
+      background-image: url(../images/icons/forward-arrow-light-small.svg);
     }
   }
 
   @media screen and(min-width: 768px) {
     padding-left: 30px;
     padding-right: 34px;
+
     &::after {
-      background-image: url('../images/icons/forward-arrow-light.svg');
+      background-image: url(../images/icons/forward-arrow-light.svg);
     }
   }
 
@@ -132,7 +148,7 @@
   background-color: var(--secondary-bg-color);
 
   &::after {
-    background-image: url('../images/icons/forward-arrow.svg');
+    background-image: url(../images/icons/forward-arrow.svg);
   }
 
   @media screen and (max-width: 767px) {
