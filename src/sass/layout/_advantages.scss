@@ -65,10 +65,12 @@
         width: 100vw; 
         display: flex;
         flex-wrap: nowrap; 
+        justify-content: space-evenly;
+
     }
 
   @media screen and (min-width: 1280px) {
-    justify-content: space-between;
+    
   }
   }
 
