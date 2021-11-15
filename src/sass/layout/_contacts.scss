@@ -227,7 +227,7 @@
   }
 
   .contacts__agency-type {
-    @include font-modify(var(--lite-text-color), 12px, 500, 0.04em, 22px);
+    @include font-modify(var(--lite-text-color), 12, 500, 0.04em, 22);
     text-transform: uppercase;
 
     max-height: 16px;
