@@ -5,20 +5,22 @@
         padding-bottom: 97px;
     }
 
+
+
     @media screen and (min-width: 768px) {
         padding-bottom: 140px;
         
     }
 }
 
-.advantages.container {
+.advantages .container {
     width: 100%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 70px 0 20px;
     //outline: 1px solid red;
 
-  @media screen and (min-width: 320px) {
-    padding: 0 70px 0 20px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
   @media screen and (min-width: 768px) {
@@ -46,6 +48,14 @@
 
 .advantages-list {
 
+    @media screen and (min-width: 320px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
     @media screen and (min-width: 768px) { 
         width: 768px;  
         display: flex;
@@ -58,27 +68,36 @@
      outline: auto;
 
     @media screen and (min-width: 320px) {
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+    @media screen and (min-width: 480px) {
         width: 230px;
         height: 156px;
-        margin-bottom: 38px;
     }
 
     @media screen and (min-width: 768px) {
         width: 180px;
-        height: 226px;
-        flex-basis: calc((100% - 3 * 15) / 3);
+        height: 226px; 
         margin: 15px;
 
     }
 
     @media screen and (min-width: 1280px) {
-        margin: auto;
+        flex-basis: calc((100% - 3 * 15) / 3);
+        width: 330px;
+        height: 222px;
     }
   }
 
-  .advantages-list_item:nth-child(3) {
-      margin-bottom: 0;
+
+  @media screen and (max-width: 767px) {
+    .advantages-list_item:nth-child(3) {
+        margin-bottom: 0;
+    }
   }
+  
   
   .icon-list {
     background-color: royalblue;
@@ -110,14 +129,46 @@
     font-size: 34px;
     line-height: 1.1470588235;
     letter-spacing: 0.04em;
+
+    @media screen and (min-width: 320px) {
+        margin-top: 16px;
+        font-size: 36px;
+        line-height: 1.1470588235;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 36px;
+        font-size: 34px;
+        line-height: 1.1470588235;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 40px;
+        font-size: 58px;
+        line-height: 66.41px;
+        letter-spacing: 4%;
+    }
+
     
   }
 
   .advantages-title_text {
+
+    @media screen and (max-width: 767px) {
     margin-top: 13px;
     font-family: DM Sans;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    }
 
   }
