@@ -1,3 +1,212 @@
-.header{
-  
+.logo {
+  display: block;
+  width: 199px;
+  height: 50px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  @include for-size(to-desktop) {
+    padding-top: 37px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include for-size(desktop) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // .header__logo
+  &__logo {
+    position: absolute;
+
+    align-items: flex-start;
+    @include for-size(tablet) {
+      margin: 37px 0;
+    }
+    @include for-size(desktop) {
+      margin: 37px 0;
+    }
+  }
+
+  // .header__menu
+  &__menu {
+    display: flex;
+  }
+  &__mobile-menu {
+    margin-left: auto;
+    @include for-size(mobile) {
+      margin-right: 30px;
+    }
+
+    background-color: inherit;
+    .icon {
+      fill: #d41443;
+    }
+    @include for-size(desktop) {
+      display: none;
+    }
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+.buy__btn {
+  display: none;
+  @include for-size(tablet) {
+    display: flex;
+  }
+
+  align-items: center;
+  justify-content: center;
+  min-width: 176px;
+  height: 44px;
+  border-radius: 22px;
+
+  @include for-size(desktop) {
+    margin-left: auto;
+  }
+
+  background-color: var(--secondary-bg-color);
+
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    margin-top: 1px;
+    margin-left: 13px;
+    background-image: url('../images/icons/about-btn-icon.svg');
+  }
+}
+
+.menu {
+  margin-left: 238px;
+  display: none;
+  @include for-size(desktop) {
+    display: block;
+  }
+
+  // .menu__list
+  &__list {
+    li + li {
+      margin-left: 35px;
+    }
+    @include for-size(desktop) {
+      display: flex;
+    }
+  }
+
+  // .menu__link
+  &__link {
+    position: relative;
+    display: block;
+    padding: 50px 0;
+    @include font-modify(#fff, 16, 700, 0.02em, 21);
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover {
+    color: var(--accent-color);
+  }
+  &__link:focus {
+    outline-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+.buy-now__icon {
+  display: block;
+  stroke: var(--accent-color);
+  margin-left: 11px;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  padding-top: 60px;
+
+  background-color: #e17992;
+  @include for-size(tablet) {
+    width: 254px;
+  }
+  @include for-size(desktop) {
+    display: none;
+  }
+  .buy__btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  transform: translateY(-200%);
+  transition: transform 300ms ease-in-out;
+  &.is-open {
+    transform: translateY(0);
+  }
+}
+
+.menu-close-btn {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #e17992;
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+.mobile-menu {
+  padding-top: 19px;
+  // .mobile-menu__link
+  li {
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+  }
+
+  &__link {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    padding: 13px 21px;
+
+    color: #fff;
+  }
+  &__link:hover {
+    color: var(--accent-color);
+  }
+  &__link:focus {
+    outline-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
