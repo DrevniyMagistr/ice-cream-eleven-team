@@ -1,5 +1,5 @@
 function scrollNav() {
-  $('.nav__link').click(function(){
+  $('.menu__link, .mobile-menu__link, .hero__btn--dark, .hero__btn--light').click(function(){
     $(".active").removeClass("active");     
     $(this).addClass("active");
     
