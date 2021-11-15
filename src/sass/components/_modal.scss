@@ -18,6 +18,14 @@
     transform: scale(0) rotate(360deg);
 }
 .modal{
+      @media screen and (max-width:479px) {
+        width: 95vw;
+        min-height: 600px;
+    }
+       @media screen and (min-width:480px) and (max-width:1279px) {
+        width: 450px;
+        min-height: 600px;
+    }
     padding: 40px;
     position: relative;
     width: 550px;
@@ -38,6 +46,11 @@
     align-items: center;
     background: var(--lite-text-color);
     border-radius: 50%;
+       transition: background-color var(--animation-timer) var(--animation-cube);
+     &:hover,
+   &:focus {
+     background-color: var(--hover-btn-bg-lite);
+   }
 }
 .modal__icon{
     width: 25px;
@@ -85,8 +98,8 @@
         }
 }
 .modal__input-icon{
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     position: absolute;
     left: 12px;
     top: 50%;
@@ -94,5 +107,66 @@
     transition: fill var(--animation-timer) var(--animation-cube);
     .modal__input:focus + &{
         fill: var(--accent-color);
+    }
+}
+.modal__menu-field{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.modal__menu-wrap{
+    display: flex;
+    align-items: baseline;
+    flex-basis: calc(100% / 3);
+    &+&{
+        margin-left: 10px;
+    }
+}
+.modal__text-field{
+    display: block;
+    margin-bottom: 20px;
+}
+.modal__text-input{
+    padding: 15px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid var(--underline-color);
+    border-radius: 25px;
+    transition: border-color var(--animation-timer) var(--animation-cube);
+    &:focus{
+        border-color: var(--accent-color);
+    }
+}
+.btn{
+    display: block;
+    margin: 0 auto;
+    min-width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    transition: background-color var(--animation-timer) var(--animation-cube), color var(--animation-timer) var(--animation-cube);
+     &:hover,
+   &:focus {
+     background-color: var(--hover-btn-bg-lite);
+     color: var(--accent-color);
+   }
+}
+.modal__checkbox-icon{
+    display: flex;
+    align-items: flex-end;
+}
+.modal__checkbox-icon span{
+    width: 20px;
+    height: 15px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .modal__checkbox:checked + &{
+        background-color: var(--accent-color);
     }
 }
