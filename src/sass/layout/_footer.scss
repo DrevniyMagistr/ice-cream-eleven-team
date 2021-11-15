@@ -92,6 +92,11 @@
     background-color: #fea5bb;
     display: flex;
     justify-content: center;
+    transition: background-color  var(--animation-timer) var(--animation-cube);
+    &:hover,
+    &:focus{
+      background-color: var(--address-btn-bg);
+    }
     @media screen and (min-width: 768px) {
       width: 34px;
       height: 34px;
@@ -133,7 +138,8 @@
       padding: 9px 0px;
     }
   }
-  &__paragraf {
+  &__paragraf,
+  &__about {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -145,6 +151,14 @@
     color: #907e82;
     @media screen and (min-width: 768px) {
       width: 276px;
+    }
+  }
+  &__about{
+    color:#e713c459;
+    &_accent{
+      color:rgb(76, 0, 130);
+      font-size: 16px;
+      font-weight: 400;
     }
   }
 }
