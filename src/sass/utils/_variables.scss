@@ -23,6 +23,7 @@ $desktop: 1280px;
   --underline-color: #e1e1e1;
 
   // BUTTON BACKGROUND
+  --primary-btn-bg: #ffffff;
 
   --hover-btn-bg: #c7133e;
   --hover-btn-bg-lite: #ecebeb;
@@ -43,10 +44,7 @@ $desktop: 1280px;
   --active-pagination-color: #d31342;
   --slider-bg-color: #fafafa;
 
-
-  // ANIMATION 
+  // ANIMATION
   --animation-cube: cubic-bezier(0.4, 0, 0.2, 1);
-	--animation-timer: 250ms;
+  --animation-timer: 250ms;
 }
-
-

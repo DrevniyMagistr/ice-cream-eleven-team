@@ -61,6 +61,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     margin-top: -20px;
     margin-left: -20px;
   }
@@ -76,6 +77,9 @@
   border-radius: 24px;
   padding-top: 161px;
   padding-bottom: 41px;
+  padding-left: 41px;
+  padding-right: 41px;
+  text-align: center;
 
   &::before {
     @include pseudo();
@@ -97,6 +101,8 @@
   @media screen and (min-width: 768px) {
     padding-top: 152px;
     padding-bottom: 40px;
+    padding-left: 11px;
+    padding-right: 11px;
     margin-left: 20px;
     margin-top: 20px;
     flex-basis: calc(100% / 3 - 20px);
@@ -109,6 +115,8 @@
   @media screen and (min-width: 1280px) {
     padding-top: 163px;
     padding-bottom: 50px;
+    padding-left: 44px;
+    padding-right: 44px;
     margin-top: 24px;
     margin-left: 24px;
     flex-basis: calc(100% / 3 - 24px);
@@ -222,7 +230,6 @@
 
   font-size: 20px;
   line-height: (23 / 20);
-  text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--lite-text-color);
@@ -254,29 +261,67 @@
 }
 
 .products__text {
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   margin-bottom: 30px;
-  max-width: 200px;
+  // max-width: 200px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 62px;
+  }
+}
 
+.products__text,
+.products__card {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.52;
-  text-align: center;
+
   letter-spacing: 0.04em;
   color: var(--lite-text-color);
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
-
     line-height: 1.76;
-    max-width: 198px;
+    // max-width: 198px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 62px;
-
     font-size: 16px;
-    max-width: 241px;
+    // max-width: 241px;
   }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+details > summary {
+  list-style: none;
+}
+
+.products__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-btn-bg);
+  transition: transform var(--animation-timer) var(--animation-cube);
+}
+
+.products__icon {
+  fill: var(--accent-color);
+}
+// details[open] summary {
+//   transform: rotate(90deg);
+// }
+
+.product__details[open] .products__button {
+  transform: rotate(90deg);
+}
+
+.products__card {
+  padding-top: 10px;
 }
