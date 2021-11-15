@@ -1,7 +1,9 @@
 .gallery {
-  background-image: linear-gradient(to top, #fff, #fff 61%, #fff5f6 39%, #fff5f6 39%);
+  background-image: linear-gradient(to top, #fff, #fff 60%, #fff5f6 40%, #fff5f6 40%);
   background-position: center;
   background-size: cover;
   width: 100%;
+  &__img{
   margin: 0 auto;
+  }
 }
