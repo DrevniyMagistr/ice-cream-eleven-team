@@ -9,12 +9,12 @@
   display: flex;
   top: 0;
   left: 0;
-  z-index: 2;
   margin: 0 auto;
   align-items: center;
   z-index: 3;
   @include for-size(to-desktop) {
-    padding-top: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .container {
