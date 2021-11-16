@@ -4,7 +4,11 @@
       closeModalBtn: document.querySelector('[data-modal-close]'),
       mobMenu: document.querySelector('[data-mobile-menu]'),
       buttonBuy: document.querySelector('[data-button-buy]'),
+      clickMenuItem: document.querySelectorAll('[data-mobile-item]')
     };
+    refs.clickMenuItem.forEach((e)=>{
+      e.addEventListener('click',toggleModal)
+    })
   
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
