@@ -14,7 +14,7 @@
   align-items: center;
   z-index: 3;
   @include for-size(to-desktop) {
-    margin-top: 35px;
+    padding-top: 35px;
   }
 
   .container {
