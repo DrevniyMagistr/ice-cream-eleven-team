@@ -5,7 +5,7 @@ $(".review-js").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,arrows:!1});
 },{}],"RSqK":[function(require,module,exports) {
 
 },{}],"sByI":[function(require,module,exports) {
-(()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),mobMenu:document.querySelector("[data-mobile-menu]"),buttonBuy:document.querySelector("[data-button-buy]")};function o(){e.openModalBtn.classList.toggle("is-hidden"),e.buttonBuy.classList.toggle("is-hidden"),e.mobMenu.classList.toggle("is-open")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o),window.matchMedia("(min-width: 1279px)").addEventListener("change",o=>{o.matches&&e.mobMenu.classList.contains("is-open")&&(e.buttonBuy.classList.remove("is-hidden"),e.openModalBtn.classList.remove("is-hidden"),e.mobMenu.classList.toggle("is-open"),bodyScrollLock.enableBodyScroll(document.body))})})();
+(()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),mobMenu:document.querySelector("[data-mobile-menu]"),buttonBuy:document.querySelector("[data-button-buy]"),clickMenuItem:document.querySelectorAll("[data-mobile-item]")};function t(){e.openModalBtn.classList.toggle("is-hidden"),e.buttonBuy.classList.toggle("is-hidden"),e.mobMenu.classList.toggle("is-open")}e.clickMenuItem.forEach(e=>{e.addEventListener("click",t)}),e.openModalBtn.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t),window.matchMedia("(min-width: 1279px)").addEventListener("change",t=>{t.matches&&e.mobMenu.classList.contains("is-open")&&(e.buttonBuy.classList.remove("is-hidden"),e.openModalBtn.classList.remove("is-hidden"),e.mobMenu.classList.toggle("is-open"),bodyScrollLock.enableBodyScroll(document.body))})})();
 },{}],"v66i":[function(require,module,exports) {
 function t(){$(".menu__link, .mobile-menu__link, .hero__btn--dark, .hero__btn--light").click(function(){return $(".active").removeClass("active"),$(this).addClass("active"),$("html, body").stop().animate({scrollTop:$($(this).attr("href")).offset().top-160},700),!1})}t();
 },{}],"FE0a":[function(require,module,exports) {
@@ -13,4 +13,4 @@ class i{constructor(i){this.el=i,this.summary=i.querySelector("summary"),this.pr
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/modal.js"),require("./js/mobile-menu.js"),require("./js/anchor.js"),require("./js/accordion-card.js");
 },{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/mobile-menu.js":"sByI","./js/anchor.js":"v66i","./js/accordion-card.js":"FE0a"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-eleven-team/src.ae637425.js.map
+//# sourceMappingURL=/ice-cream-eleven-team/src.f544637e.js.map
