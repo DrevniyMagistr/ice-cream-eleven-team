@@ -308,6 +308,7 @@ details > summary {
   width: 40px;
   border-radius: 50%;
   background-color: var(--primary-btn-bg);
+  cursor: pointer;
   transition: transform var(--animation-timer) var(--animation-cube);
 }
 

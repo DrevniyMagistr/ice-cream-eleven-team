@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 86px;
+  padding: 86px 0;
 
   background-image: linear-gradient(
     to bottom,
@@ -318,12 +318,12 @@
   }
 
   .contacts__desc {
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279px) {
       font-size: 14px;
       line-height: calc(23 / 14);
     }
     @media screen and (min-width: 1280px) {
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
     }
   }
 

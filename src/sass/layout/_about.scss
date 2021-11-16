@@ -1,5 +1,5 @@
 .about {
-  padding-top: 125px;
+  padding-top: 119px;
 
   background-image: url('../images/mobile/about/about-bg-mobile.png');
   background-repeat: no-repeat;
@@ -148,15 +148,15 @@
 }
 
 .about__bottom-text {
-  margin-bottom: 15px;
+  margin-bottom: 34px;
   color: var(--third-text-color);
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 62px;
+    margin-bottom: 47px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 

@@ -24,7 +24,7 @@
 // gap --  interval between cards
 
 @mixin flex-card($nc, $gap) {
-  flex-basis: calc(100% / #{$nc} - $gap);
+  flex-basis: calc(100% / #{$nc} - #{$gap});
   margin-left: $gap;
   margin-top: $gap;
 }
