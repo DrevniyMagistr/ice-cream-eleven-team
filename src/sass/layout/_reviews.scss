@@ -1,2 +1,68 @@
-.reviews{
+.reviews {
+  padding-top: 43px;
+  padding-bottom: 43px;
+  background-color: var(--secondary-bg-color);
+  &__wrapper {
+    background-color: #fafafa;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 57px;
+    padding-right: 57px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__text {
+    line-height: 255%;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    background: repeating-linear-gradient(0deg, #e1e1e1, #e1e1e1 0 2px, transparent 1px 30px);
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8%;
+      left: 0;
+      z-index: -1;
+      width: 54px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../images/icons/marks.svg);
+    }
+  }
+  &__images {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+  }
+  &__address {
+    text-align: center;
+    &::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 4px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../images/icons/dekor-dots.svg);
+    }
+  }
+  &__list {
+    .slick-dots {
+      bottom: -35px;
+    }
+    .slick-dots li button:before {
+      font-size: 12px;
+    }
+    .slick-dots li.slick-active button:before {
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: center;
+      background-image: url(../images/icons/home.svg);
+      color: transparent;
+    }
+  }
 }
