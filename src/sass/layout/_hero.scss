@@ -1,7 +1,7 @@
 .hero {
   margin: 0 auto;
   /* height: 502px; */
-  background-color: #ffb8ca;
+  background-color: var(--hero-bg-color);
   z-index: 1;
 
   // .hero__container
@@ -32,21 +32,19 @@
       bottom: 75px;
       left: 12%;
       border-radius: 50%;
-      background-color: #ffa5ba;
+      background-color: var(--secondary-text-color);
       /* z-index: -2; */
 
       @include for-size(tablet) {
-        width: 322px;
-        height: 322px;
+        @include add-size(322px, 322px);
         bottom: 46px;
-        left: 38%;
+        left: 36%;
       }
 
       @include for-size(desktop) {
-        width: 538px;
-        height: 538px;
+        @include add-size(538px, 538px);
         bottom: 75px;
-        left: 38%;
+        left: 36%;
       }
     }
   }
@@ -61,14 +59,14 @@
     color: #ffffff;
 
     font-size: 26px;
-    line-height: 30px;
+    line-height: calc(30 / 26);
     letter-spacing: 0.04em;
     width: 218px;
     padding: 193px 0 0 0;
 
     @include for-size(tablet) {
       font-size: 22px;
-      line-height: 25px;
+      line-height: calc(25 / 22);
       letter-spacing: 0.04em;
       width: 162px;
       padding: 102px 0 0 0;
@@ -76,10 +74,10 @@
 
     @include for-size(desktop) {
       font-size: 38px;
-      line-height: 44px;
+      line-height: calc(44 / 38);
       letter-spacing: 0.04em;
       width: 310px;
-      padding: 171px 0 0 69px;
+      padding: 171px 0 0 0;
     }
 
     span {
@@ -87,10 +85,10 @@
       font-style: normal;
       font-weight: normal;
       font-size: 48px;
-      line-height: calc(48 / 46);
+      line-height: calc(46 / 48);
 
       text-transform: uppercase;
-      color: #d41443;
+      color: var(--accent-color);
       @include for-size(tablet) {
         font-size: 34px;
         line-height: 90.5%;
@@ -114,7 +112,7 @@
       margin: 20px 0 0 0px;
     }
     @include for-size(desktop) {
-      margin: 25px 0 0 69px;
+      margin: 25px 0 0 0;
     }
   }
 
@@ -128,7 +126,7 @@
     font-weight: normal;
 
     font-size: 8px;
-    line-height: calc(8 / 10);
+    line-height: calc(10 / 8);
     min-width: 62px;
     padding: 8px 20px;
 
@@ -147,11 +145,11 @@
       height: 40px;
       border-radius: 22px;
       font-size: 14px;
-      line-height: calc(14 / 18);
+      line-height: calc(18 / 14);
     }
     &:hover,
     &:focus {
-      background-color: #c7133e;
+      background-color: var(--hover-btn-bg);
       color: #ffffff;
     }
   }
@@ -161,13 +159,13 @@
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
-    line-height: calc(8 / 10);
+    line-height: calc(10 / 8);
     display: inline-block;
     padding: 8px 20px;
     min-width: 40px;
     border-radius: 22px;
     background-color: #ffffff;
-    color: #d41443;
+    color: var(--accent-color);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -180,37 +178,40 @@
       height: 40px;
       border-radius: 22px;
       font-size: 14px;
-      line-height: calc(14 / 18);
+      line-height: calc(18 / 14);
     }
 
     &:hover,
     &:focus {
-      background-color: #ecebeb;
-      color: #d41443;
+      background-color: var(--hover-btn-bg-lite);
+      color: var(--accent-color);
     }
   }
 }
 
 .bio-eco {
   display: none;
+  position: relative;
   @include for-size(tablet) {
     display: flex;
   }
 
   // .bio-eco__img
-
   &__img {
     display: none;
+    position: absolute;
+    top: 0;
+    left: -37px;
     @include for-size(tablet) {
+      left: 0;
       display: block;
-      width: 124px;
-      height: 126px;
+      @include add-size(124px, 126px);
       padding: 19px 0 0 0;
     }
     @include for-size(desktop) {
-      width: 188px;
-      height: 191px;
-      padding: 56px 0 0 31px;
+      left: -37px;
+      @include add-size(188px, 191px);
+      padding: 56px 0 0 0;
     }
   }
 
@@ -225,41 +226,50 @@
   // .bio-eco__text
   &__text {
     width: 114px;
-    margin: 0 0 7px;
-
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
-    line-height: 150%;
-    /* or 12px */
+    line-height: calc(12 / 8);
     color: #ffffff;
-
+    @include for-size(tablet) {
+      margin: 0 0 7px 120px;
+    }
     @include for-size(desktop) {
       width: 200px;
-      margin: 0 0 20px;
+      margin: 0 0 20px 181px;
       font-size: 14px;
-      line-height: 140%;
-      /* or 20px */
+      line-height: calc(20 / 14);
     }
   }
 
   // .bio-eco__link
   &__link {
     display: flex;
-    width: 18px;
-    height: 18px;
+    @include add-size(26px, 26px);
     align-items: center;
     justify-content: center;
     background-color: #ffff;
-    color: #d41443;
+    color: var(--accent-color);
     border-radius: 50%;
+    @include for-size(tablet) {
+      margin: 0 0 0 120px;
+    }
+    @include for-size(desktop) {
+      margin: 0 0 0 181px;
+    }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--hover-btn-bg-lite);
+      color: var(--accent-color);
+    }
   }
 
   // .bio-eco__arrow
   &__arrow {
-    width: 6px;
-    height: 6px;
+    @include add-size(6px, 6px);
     fill: currentColor;
   }
 }
@@ -293,13 +303,13 @@
     position: absolute;
     width: 168px;
     bottom: 0;
-    right: 7%;
+    right: 5%;
     z-index: 1;
   }
 
   @include for-size(desktop) {
     width: 293px;
-    right: 6%;
+    right: 5%;
   }
 }
 .equipment-list {
@@ -320,7 +330,7 @@
   }
   @include for-size(desktop) {
     top: 156px;
-    right: 97px;
+    right: 67px;
   }
 
   // .equipment-list__item
@@ -337,22 +347,18 @@
     display: none;
 
     @include for-size(tablet) {
-      content: '';
-      display: block;
-      position: absolute;
+      @include pseudo();
       top: 2px;
       right: 2px;
       transform: translate(62%, -20%);
-      width: 16px;
-      height: 16px;
+      @include add-size(16px, 16px);
       border-radius: 50%;
       z-index: -1;
       background-color: #ffff;
     }
 
     @include for-size(desktop) {
-      width: 30px;
-      height: 30px;
+      @include add-size(30px, 30px);
     }
   }
 
@@ -360,23 +366,19 @@
 
   &__number {
     font-family: Titan One;
-    color: #d41443;
+    color: var(--accent-color);
     display: inline-block;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
-    line-height: 32px;
-    /* identical to box height */
-
+    line-height: calc(32 / 28);
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     @include for-size(desktop) {
       font-size: 46px;
-      line-height: 53px;
-      /* identical to box height */
-
+      line-height: calc(53 / 46);
       text-align: right;
       letter-spacing: 0.04em;
     }
@@ -388,7 +390,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
-    line-height: 10px;
+    line-height: calc(10 / 8);
     text-align: right;
     margin: 0;
     padding: 0;
@@ -397,7 +399,7 @@
   }
   @include for-size(desktop) {
     font-size: 14px;
-    line-height: 18px;
+    line-height: calc(18 / 14);
     text-align: right;
   }
 }
