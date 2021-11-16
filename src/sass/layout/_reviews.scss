@@ -10,6 +10,20 @@
     padding-right: 57px;
     font-weight: 500;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      padding-top: 47px;
+      padding-bottom: 34px;
+      padding-left: 80px;
+      padding-right: 80px;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 47px;
+      padding-bottom: 40px;
+      padding-left: 87px;
+      padding-right: 87px;
+      margin-bottom: 15px;
+    }
   }
   &__text {
     line-height: 255%;
@@ -17,6 +31,16 @@
     text-align: center;
     z-index: 2;
     background: repeating-linear-gradient(0deg, #e1e1e1, #e1e1e1 0 2px, transparent 1px 30px);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 216%;
+      letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 186%;
+      letter-spacing: 0.04em;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -34,9 +58,24 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 29px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 19px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
   }
   &__address {
     text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      letter-spacing: 0.04em;
+    }
     &::before {
       content: '';
       display: block;
@@ -44,7 +83,13 @@
       height: 4px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+      }
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
+      }
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url(../images/icons/dekor-dots.svg);
@@ -53,6 +98,9 @@
   &__list {
     .slick-dots {
       bottom: -35px;
+      @media screen and (min-width: 768px) {
+        bottom: -40px;
+      }
     }
     .slick-dots li button:before {
       font-size: 12px;
