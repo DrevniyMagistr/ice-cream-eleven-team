@@ -5,7 +5,8 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(240, 209, 165, 0.2);
+    z-index: 99999;
+    background-color: rgba(240, 209, 165, 0.4);
     top: 0;
      transition: opacity var(--animation-timer) var(--animation-cube), visibility var(--animation-timer) var(--animation-cube), transform var(--animation-timer) var(--animation-cube), rotate var(--animation-timer) var(--animation-cube);
 }
@@ -147,6 +148,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: calc(18 / 14);
+     background: var(--lite-text-color);
     transition: background-color var(--animation-timer) var(--animation-cube), color var(--animation-timer) var(--animation-cube);
      &:hover,
    &:focus {
@@ -169,4 +171,29 @@
     .modal__checkbox:checked + &{
         background-color: var(--accent-color);
     }
+}
+.modal__map-field{
+        margin-bottom: 20px;
+    
+}
+.modal__map{
+    border-radius: 22px;
+}
+.modal__label_center{
+    text-align: center;
+}
+.modal__address-list{
+    @media screen and (max-width:479px) {
+        flex-wrap: wrap;
+    }
+    display: flex;
+    justify-content: space-between;
+}
+.modal__address-item{
+    @media screen and (max-width:479px) {
+         &:not(:last-child){
+             margin-bottom: 4px;
+         }
+    }
+   
 }
