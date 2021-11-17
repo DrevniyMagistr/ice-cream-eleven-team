@@ -12,7 +12,9 @@
   margin: 0 auto;
   align-items: center;
   z-index: 3;
-  transition: background-color var(--animation-timer) var(--animation-cube);
+
+  transition: background-color var(--animation-timer) var(--animation-cube),
+    background-image var(--animation-timer) var(--animation-cube);
 
   @include for-size(to-tablet) {
     &.scrolled {
