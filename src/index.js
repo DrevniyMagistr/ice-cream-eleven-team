@@ -5,4 +5,5 @@ import './js/modal-map';
 import './js/mobile-menu.js';
 import './js/anchor.js';
 import './js/accordion-card.js';
+import './js/header-scroll.js';
 // import './js/header-fixed.js';
