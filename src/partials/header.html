@@ -1,4 +1,4 @@
-<header class="header" >
+<header class="header header-js" >
   <div class="container header-wrapper">
     <a href="#home" class="header__logo logo">
       <picture> 
@@ -29,16 +29,16 @@
                         ./images/mobile/header/logo.png 1x,
                         ./images/mobile/header/logo@2x.png 2x"
                 media="(max-width: 767px)">                                         
-        <img class="_img" src="./images/mobile/header/logo.png" alt="logo" width="199">   
+        <img class="logo-img" src="./images/mobile/header/logo.png" alt="logo" width="199">   
     </picture>
     </a>
     <nav class="header__menu menu">
       <ul class="menu__list">
-          <li><a href="#home" class="menu__link">Home</a></li>
-          <li><a href="#about-us" class="menu__link">About us</a></li>
-          <li><a href="#howitsmade" class="menu__link">How it’s made?</a></li>
-          <li><a href="#products" class="menu__link">Our products</a></li>
-          <li><a href="#contact" class="menu__link">Contact</a></li>
+          <li><a href="#home" class="menu__link" data-link>Home</a></li>
+          <li><a href="#about-us" class="menu__link" data-link>About us</a></li>
+          <li><a href="#howitsmade" class="menu__link" data-link>How it’s made?</a></li>
+          <li><a href="#products" class="menu__link" data-link>Our products</a></li>
+          <li><a href="#contact" class="menu__link" data-link>Contact</a></li>
       </ul>             
     </nav>
     <button type="button" class="header__mobile-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu" >
@@ -50,12 +50,12 @@
   </div>
 </header>
 
-<section id="home" class="hero">
+<section id="home" class="hero hero-js">
   <div class="hero__container container">
     <h1 class="hero__title"> ice cream made with <span>passion</span></h1>
     <ul class="hero__btn">
-      <li><a class="hero__btn--dark" href="#products">Products</a></li>
-      <li><a class="hero__btn--light" href="#howitsmade">How it’s made?</a></li>
+      <li><a class="hero__btn--dark" data-link href="#products">Products</a></li>
+      <li><a class="hero__btn--light" data-link href="#howitsmade">How it’s made?</a></li>
     </ul>
     <div class="bio-eco">
       <picture class="bio-eco__img animate__animated animate__zoomInDown">

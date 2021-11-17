@@ -4,14 +4,13 @@
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   display: flex;
   top: 0;
   left: 0;
   margin: 0 auto;
   align-items: center;
-  z-index: 3;
 
   transition: background-color var(--animation-timer) var(--animation-cube),
     background-image var(--animation-timer) var(--animation-cube);
@@ -72,6 +71,10 @@
     }
   }
 }
+.fixed{
+  position: fixed;
+  z-index: 3;
+}
 
 .header-wrapper {
   display: flex;
@@ -90,15 +93,15 @@
 
 .buy__btn {
   display: none;
-  @include for-size(tablet) {
-    display: flex;
-  }
 
   align-items: center;
   justify-content: center;
   min-width: 160px;
   height: 44px;
   border-radius: 22px;
+  @include for-size(tablet) {
+    display: flex;
+  }
 
   @include for-size(desktop) {
     margin-left: auto;

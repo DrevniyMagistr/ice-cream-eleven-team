@@ -1,5 +1,5 @@
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 4;
@@ -10,6 +10,9 @@
 
   background-color: var(--mob-menu-bg-color);
 
+  @include  for-size(tablet) {
+  width: 50vw;
+}
   @include for-size(desktop) {
     display: none;
   }
