@@ -12,12 +12,13 @@
   margin: 0 auto;
   align-items: center;
   z-index: 3;
+  background-color: var(--primary-card-bg);
   @include for-size(to-desktop) {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
-  .container {
+  .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
