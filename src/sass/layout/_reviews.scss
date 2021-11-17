@@ -41,19 +41,22 @@
       letter-spacing: 0.04em;
     }
     &::before {
-      @media screen and (max-width:479px) {
-        top:-9%;
+      @media screen and (max-width: 479px) {
+        top: -9%;
       }
       content: '';
       position: absolute;
-      top: -12%;
-      left: -40px;
+      top: -17%;
+      left: -34px;
       z-index: -1;
       width: 54px;
       height: 40px;
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url(../images/icons/marks.svg);
+      @media screen and (min-width: 1280px) {
+        left: -45px;
+      }
     }
   }
   &__images {
