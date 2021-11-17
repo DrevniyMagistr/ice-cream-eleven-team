@@ -1,7 +1,22 @@
 <header class="header" >
   <div class="container header-wrapper">
     <a href="#home" class="header__logo logo">
-      <picture>                               
+      <picture> 
+        <source srcset="
+         ./images/desktop/header/logo.webp 1x, 
+         ./images/desktop/header/logo@2x.webp 2x" 
+        type="image/webp"
+         media="(min-width:1280px )">
+       <source srcset="
+         ./images/tablet/header/logo.webp 1x, 
+         ./images/tablet/header/logo@2x.webp 2x" 
+        type="image/webp"
+         media="(max-width: 1279px)">
+            <source srcset="
+        ./images/mobile/header/logo.webp 1x,
+         ./images/mobile/header/logo@2x.webp 2x" 
+        type="image/webp"
+         media="(max-width: 767px)">
         <source srcset="
                         ./images/desktop/header/logo.png 1x, 
                         ./images/desktop/header/logo@2x.png 2x"
@@ -9,7 +24,7 @@
         <source srcset="
                         ./images/tablet/header/logo.png 1x, 
                         ./images/tablet/header/logo@2x.png 2x"
-                media="(min-width: 768px)">  
+                media="(max-width: 1279px)">  
         <source srcset="
                         ./images/mobile/header/logo.png 1x,
                         ./images/mobile/header/logo@2x.png 2x"
@@ -44,6 +59,16 @@
     </ul>
     <div class="bio-eco">
       <picture class="bio-eco__img animate__animated animate__zoomInDown">
+        <source  srcset="./images/desktop/hero/milk.webp 1x, 
+                      ./images/desktop/hero/milk@2x.webp 2x"
+         type="image/webp"
+          media="(min-width:1200px )">
+          <source  srcset="
+           ./images/tablet/hero/milk.webp 1x, 
+                      ./images/tablet/hero/milk@2x.webp 2x
+          "
+           type="image/webp"
+          media="(min-width: 768px)">
         <source
                 srcset="
                       ./images/desktop/hero/milk.png 1x, 
@@ -69,8 +94,25 @@
         </a>
       </div>
     </div>
-
     <picture class="icecream-image">
+        <source
+              srcset="
+                    ./images/desktop/hero/header-icecream.webp    1x,
+                    ./images/desktop/hero/header-icecream@2x.webp 2x"
+                    type="image/webp"
+              media="(min-width: 1280px)"/>
+         <source
+              srcset="
+                    ./images/tablet/hero/header-icecream.webp    1x,
+                    ./images/tablet/hero/header-icecream@2x.webp 2x"
+                     type="image/webp"
+              media="(min-width: 768px)"/>
+               <source
+              srcset="
+                    ./images/mobile/hero/header-icecream.webp    1x,
+                    ./images/mobile/hero/header-icecream@2x.webp 2x"
+                    type="image/webp"
+              media="(max-width: 767px)"/>
       <source
               srcset="
                     ./images/desktop/hero/header-icecream.png    1x,
@@ -88,7 +130,6 @@
               media="(max-width: 767px)"/>
       <img src="./images/desktop/hero/header-icecream.png" alt="Icecream" width="171"/>
     </picture>
-
     <ul class="equipment-list">
       <li class="equipment-list__item">
         <span class="equipment-list__number">16</span>
@@ -99,8 +140,19 @@
         <p class="equipment-list__text">food trucks</p>
       </li>
     </ul>
-  
     <picture class="tasty__girl animate__animated animate__slideInUp">
+        <source
+              srcset="
+                      ./images/desktop/hero/girl.webp    1x,
+                      ./images/desktop/hero/girl@2x.webp 2x"
+                   type="image/webp"     
+              media="(min-width: 1280px)"/>
+          <source
+              srcset="
+                      ./images/tablet/hero/girl.webp    1x,
+                      ./images/tablet/hero/girl@2x.webp 2x"
+                      type="image/webp" 
+              media="(min-width: 768px)"/>
       <source
               srcset="
                       ./images/desktop/hero/girl.png    1x,
