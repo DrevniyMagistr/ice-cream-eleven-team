@@ -42,10 +42,13 @@
       letter-spacing: 0.04em;
     }
     &::before {
+      @media screen and (max-width:479px) {
+        top:-9%;
+      }
       content: '';
       position: absolute;
-      top: -8%;
-      left: 0;
+      top: -12%;
+      left: -40px;
       z-index: -1;
       width: 54px;
       height: 40px;

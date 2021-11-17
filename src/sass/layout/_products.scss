@@ -309,7 +309,10 @@ details > summary {
   border-radius: 50%;
   background-color: var(--primary-btn-bg);
   cursor: pointer;
-  transition: transform var(--animation-timer) var(--animation-cube);
+  transition: transform var(--animation-timer) var(--animation-cube), background-color  var(--animation-timer) var(--animation-cube);
+  &:hover, &:focus{
+    background-color: var(--hover-btn-bg-lite);
+  }
 }
 
 .products__icon {
