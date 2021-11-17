@@ -3,15 +3,13 @@
   top: 0;
   right: 0;
   z-index: 4;
-  height: 100vmax;
-  width: 250px;
+  height: 100vh;
+  width: 100vw;
   padding-top: 60px;
   filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
   background-color: var(--mob-menu-bg-color);
-  @include for-size(tablet) {
-    width: 254px;
-  }
+
   @include for-size(desktop) {
     display: none;
   }
@@ -56,7 +54,7 @@
 
     color: #fff;
   }
-  &__link:hover {
+  &__link:hover{
     color: var(--accent-color);
   }
   &__link:focus {
