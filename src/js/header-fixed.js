@@ -1,11 +1,3 @@
-// $(function () {
-//   $(document).scroll(function () {
-// 	  var $nav = $(".header");
-// 	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-// 	});
-// });
-
-
 const smoothAnchors = document.querySelectorAll('[data-link]')
 
 const header = document.querySelector('.header-js')
