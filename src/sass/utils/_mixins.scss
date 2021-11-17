@@ -90,3 +90,13 @@
     }
   }
 }
+
+// Add background scss
+
+@mixin bg-im($path, $bgsz){
+  background-image: 
+		$path;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: $bgsz;
+}
