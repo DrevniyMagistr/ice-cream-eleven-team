@@ -23,8 +23,9 @@
   transform: scale(0) rotate(360deg);
 }
 .modal {
-  padding: 40px;
   position: relative;
+  top: 0;
+  padding: 40px;
   max-width: 550px;
   width: 100%;
   min-height: 581px;
@@ -34,8 +35,7 @@
   transition: transform var(--animation-timer) var(--animation-cube),
     rotate var(--animation-timer) var(--animation-cube);
   @media screen and (max-width: 479px) {
-    width: 95vw;
-    height: 80vh;
+    // width: 95vw;
   }
   @media screen and (min-width: 480px) and (max-width: 1279px) {
     width: 450px;
