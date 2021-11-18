@@ -34,11 +34,13 @@
   transform: scale(1) rotate(0);
   transition: transform var(--animation-timer) var(--animation-cube),
     rotate var(--animation-timer) var(--animation-cube);
-  
+    @media screen and (max-height:680px) and (orientation: portrait) {
+      align-self: flex-start
+    }
   @media screen and (min-width: 480px) and (max-width: 1279px) {
     width: 450px;
   }
-  @media screen and(max-height:680px) and (orientation: landscape) {
+  @media screen and (max-height:680px) and (orientation: landscape) {
     align-self: flex-start;
   }
 }

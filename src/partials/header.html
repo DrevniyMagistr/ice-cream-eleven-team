@@ -58,29 +58,32 @@
       <li><a class="hero__btn--light" data-link href="#howitsmade">How it’s made?</a></li>
     </ul>
     <div class="bio-eco">
-      <picture class="bio-eco__img animate__animated animate__zoomInDown">
-        <source  srcset="./images/desktop/hero/milk.webp 1x, 
-                      ./images/desktop/hero/milk@2x.webp 2x"
-         type="image/webp"
-          media="(min-width:1200px )">
-          <source  srcset="
-           ./images/tablet/hero/milk.webp 1x, 
-                      ./images/tablet/hero/milk@2x.webp 2x
-          "
+      .<div class="bio-eco__inner bio-eco__img animate__animated animate__zoomInDown">
+        <picture>
+          <source  srcset="./images/desktop/hero/milk.webp 1x, 
+                        ./images/desktop/hero/milk@2x.webp 2x"
            type="image/webp"
-          media="(min-width: 768px)">
-        <source
-                srcset="
-                      ./images/desktop/hero/milk.png 1x, 
-                      ./images/desktop/hero/milk@2x.png 2x"
-                media="(min-width: 1200px)"/>
-        <source
-                srcset="
-                      ./images/tablet/hero/milk.png 1x, 
-                      ./images/tablet/hero/milk@2x.png 2x"
-                media="(min-width: 768px)"/>
-        <img src="./images/desktop/hero/milk.png" alt="bio-eco" width="200"/>
-      </picture>
+            media="(min-width:1200px )">
+            <source  srcset="
+             ./images/tablet/hero/milk.webp 1x, 
+                        ./images/tablet/hero/milk@2x.webp 2x
+            "
+             type="image/webp"
+            media="(min-width: 768px)">
+          <source
+                  srcset="
+                        ./images/desktop/hero/milk.png 1x, 
+                        ./images/desktop/hero/milk@2x.png 2x"
+                  media="(min-width: 1200px)"/>
+          <source
+                  srcset="
+                        ./images/tablet/hero/milk.png 1x, 
+                        ./images/tablet/hero/milk@2x.png 2x"
+                  media="(min-width: 768px)"/>
+          <img src="./images/desktop/hero/milk.png" alt="bio-eco" width="200"/>
+        </picture>
+      </div>
+      
 
       <div class="bio-eco__content">
         <p class="bio-eco__text">
@@ -94,7 +97,8 @@
         </a>
       </div>
     </div>
-    <picture class="icecream-image">
+    <div class="inner__img icecream-image">
+      <picture>
         <source
               srcset="
                     ./images/desktop/hero/header-icecream.webp    1x,
@@ -130,6 +134,7 @@
               media="(max-width: 767px)"/>
       <img src="./images/desktop/hero/header-icecream.png" alt="Icecream" width="171"/>
     </picture>
+    </div>
     <ul class="equipment-list">
       <li class="equipment-list__item">
         <span class="equipment-list__number">16</span>
@@ -140,7 +145,8 @@
         <p class="equipment-list__text">food trucks</p>
       </li>
     </ul>
-    <picture class="tasty__girl animate__animated animate__slideInUp">
+    <div class="equipment-list__inner tasty__girl animate__animated animate__slideInUp">
+      <picture>
         <source
               srcset="
                       ./images/desktop/hero/girl.webp    1x,
@@ -165,6 +171,8 @@
               media="(min-width: 768px)"/>
       <img src="./images/desktop/hero/girl.png" alt="girl" width="293" />
     </picture>
+    </div>
+    
     </div>  
   </div>  
 </section>
