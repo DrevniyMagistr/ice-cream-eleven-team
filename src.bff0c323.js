@@ -5,7 +5,7 @@ $(".review-js").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,arrows:!1});
 },{}],"RSqK":[function(require,module,exports) {
 (()=>{const o={openModalBtn:document.querySelectorAll("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function e(){o.modal.classList.toggle("is-hidden"),document.body.classList.toggle("overflow-y")}o.openModalBtn.forEach(o=>{o.addEventListener("click",e)}),o.closeModalBtn.addEventListener("click",e)})();
 },{}],"zKgj":[function(require,module,exports) {
-(()=>{const e={openModalBtn:document.querySelector("[data-modal-open-map]"),closeModalBtn:document.querySelector("[data-modal-close-map]"),modal:document.querySelector("[data-modal-map]")};function o(){e.modal.classList.toggle("is-hidden"),document.body.classList.toggle("overflow-y")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+(()=>{const o={openModalBtn:document.querySelectorAll("[data-modal-open-map]"),closeModalBtn:document.querySelector("[data-modal-close-map]"),modal:document.querySelector("[data-modal-map]")};function e(){o.modal.classList.toggle("is-hidden"),document.body.classList.toggle("overflow-y")}o.openModalBtn.forEach(o=>{o.addEventListener("click",e)}),o.closeModalBtn.addEventListener("click",e)})();
 },{}],"sByI":[function(require,module,exports) {
 (()=>{const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),o=document.querySelector(".js-close-menu"),c=document.querySelectorAll("[data-mobile-item]"),d=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};c.forEach(e=>{e.addEventListener("click",d)}),t.addEventListener("click",d),o.addEventListener("click",d),window.matchMedia("(min-width: 1280px)").addEventListener("change",o=>{o.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})();
 },{}],"FE0a":[function(require,module,exports) {
@@ -17,4 +17,4 @@ const e=document.querySelectorAll("[data-link]"),o=document.querySelector(".head
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/modal.js"),require("./js/modal-map"),require("./js/mobile-menu.js"),require("./js/accordion-card.js"),require("./js/header-scroll.js"),require("./js/header-fixed.js");
 },{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/modal-map":"zKgj","./js/mobile-menu.js":"sByI","./js/accordion-card.js":"FE0a","./js/header-scroll.js":"rDCp","./js/header-fixed.js":"ys5n"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-eleven-team/src.7bd3ee55.js.map
+//# sourceMappingURL=/ice-cream-eleven-team/src.bff0c323.js.map
