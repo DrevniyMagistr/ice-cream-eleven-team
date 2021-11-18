@@ -7,14 +7,11 @@
   @media screen and (min-width: 1280px) {
     padding: 39px 0 59px;
   }
-  // .advantages__list
 
   &__list {
     width: 100%;
     @media screen and (min-width: 768px) {
       display: flex;
-      // flex-wrap: nowrap;
-      // justify-content: space-between;
       $gap: 60px;
       margin-left: calc(-1 * #{$gap});
       margin-top: calc(-1 * #{$gap});
@@ -26,8 +23,6 @@
       margin-top: calc(-1 * #{$gap});
     }
   }
-
-  // .advantages__item
 
   &__item {
     position: relative;
@@ -79,8 +74,6 @@
     }
   }
 
-  // .advantages__description
-
   &__text {
     @include font-modify(var(--primary-text-color), 12, 700, 0.02em, 20);
     margin-top: 13px;
@@ -95,8 +88,6 @@
       line-height: (28 / 16);
     }
   }
-
-  // .advantages__number
 
   &__number {
     font-family: 'Titan One', cursive;
